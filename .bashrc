@@ -146,3 +146,11 @@ export PATH=/home/khoatran/software/anaconda/bin:$PATH
 
 # Selenium's Chrome driver
 export PATH=/home/khoatran/software/chromedriver:$PATH
+
+# Racket and Dr.Racket
+export PATH=/home/khoatran/software/racket/bin:$PATH
+
+# Run SML test files
+smlrun() {
+  echo 'use "'${1%.sml}.sml'";' | rlwrap sml
+}
