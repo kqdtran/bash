@@ -37,6 +37,9 @@ alias dr=drracket
 # R, RStudio
 alias rs=rstudio
 
+# Mathematica
+alias maca=mathematica
+
 # Git alias for the lazy. The three below are my most commonly used ones
 alias addA='git add -A'
 alias pull='git pull origin master'
@@ -60,8 +63,22 @@ alias de='deactivate'
 
 # class alias. Always remember to clear and renew after each semester
 alias s199="ssh cs199-xs@nova.cs.berkeley.edu" # don't clear this one yet
-alias s161="ssh cs161-XX@nova.cs.berkeley.edu"
-alias s189="ssh cs189-XX@nova.cs.berkeley.edu"
+alias s70="ssh cs70-re@nova.cs.berkeley.edu"
+alias s161="ssh cs161-py@hive22.cs.berkeley.edu"
+alias s189="ssh cs189-fx@nova.cs.berkeley.edu"
+alias s164="ssh cs164-au@nova.cs.berkeley.edu"
+alias s135="ssh s135-1007801@98.143.38.105"
+alias s135scf="ssh s135-1007801@scf-ug01.berkeley.edu"
+alias sis="ssh khoatran@ischool.berkeley.edu"
+
+# Stat 135 Cloud
+alias cloud135="rdesktop -u s135-1007801 98.143.38.105"
+
+# SAAS Book VM
+alias svm="ssh -p 3022 saasbook@127.0.0.1"
+function scpvm() {
+    scp -r $1 -P 3022 saasbook@127.0.0.1:~/$2
+}
 
 # EE122 Project 3
 #alias s122vm="ssh ee122@172.16.122.2"
@@ -73,9 +90,21 @@ alias s189="ssh cs189-XX@nova.cs.berkeley.edu"
 function scp199() {
     scp -r $1 cs199-xs@nova.cs.berkeley.edu:~/$2
 }
+function scp70() {
+    scp -r $1 cs70-re@nova.cs.berkeley.edu:~/$2
+}
 function scp161() {
-    scp -r $1 cs161-XX@nova.cs.berkeley.edu:~/$2
+    scp -r $1 cs161-py@hive22.cs.berkeley.edu:~/$2
 }
 function scp189() {
-    scp -r $1 cs189-XX@nova.cs.berkeley.edu:~/$2
+    scp -r $1 cs189-fx@nova.cs.berkeley.edu:~/$2
+}
+function scp164() {
+    scp -r $1 cs164-au@nova.cs.berkeley.edu:~/$2
+}
+function scp135() {
+    scp -r $1 s135-1007801@98.143.38.105:~/$2
+}
+function scpis() {
+    scp -r $1 khoatran@ischool.berkeley.edu:~/$2
 }

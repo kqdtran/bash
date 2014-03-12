@@ -97,7 +97,7 @@ fi
 #---------------------------------------#
 #########################################
 
-# Matlab, I hate chu
+# Matlab
 export PATH=$PATH:/usr/local/MATLAB/R2012a/bin
 
 # Heroku Toolbelt
@@ -123,7 +123,7 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
 # Pig local use
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386/
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export PATH=/home/khoatran/software/pig-0.11.1/bin:$PATH
 export PIG_HOME=/home/khoatran/software/pig-0.11.1
 
@@ -149,6 +149,9 @@ export PATH=/home/khoatran/software/chromedriver:$PATH
 
 # Racket and Dr.Racket
 export PATH=/home/khoatran/software/racket/bin:$PATH
+
+# Twitter's Storm
+export PATH=/home/khoatran/software/storm-0.9.0.1/bin:$PATH
 
 # Run SML test files
 smlrun() {
