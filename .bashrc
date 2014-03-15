@@ -16,7 +16,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+HISTSIZE=2000
 HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
@@ -101,7 +101,7 @@ fi
 export PATH=$PATH:/usr/local/MATLAB/R2012a/bin
 
 # Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/usr/local/heroku/bin:$PATH
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
@@ -114,7 +114,7 @@ export PATH=/home/khoatran/software/pycharm-2.7.3/bin:$PATH
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 # Scala and SBT
-export SCALA_HOME="/usr/local/scala-2.10.1/"
+export SCALA_HOME=/usr/local/scala-2.10.1/
 export PATH=$PATH:$SCALA_HOME/bin
 export PATH=/usr/bin/sbt/bin:$PATH
 
@@ -141,7 +141,7 @@ export PATH=/home/khoatran/software/leJOS_NXJ_0.9.1beta-3/bin:$PATH
 # lenskit, for Coursera's Intro to Recommender System
 export PATH=/home/khoatran/software/lenskit-2.0/bin:$PATH
 
-# Anaconda 1.6.1 installer
+# Anaconda
 export PATH=/home/khoatran/software/anaconda/bin:$PATH
 
 # Selenium's Chrome driver
@@ -155,5 +155,5 @@ export PATH=/home/khoatran/software/storm-0.9.0.1/bin:$PATH
 
 # Run SML test files
 smlrun() {
-  echo 'use "'${1%.sml}.sml'";' | rlwrap sml
+    echo 'use "'${1%.sml}.sml'";' | rlwrap sml
 }

@@ -9,6 +9,7 @@ apt-get install -y python-setuptools python-dev python-pip python-matplotlib pan
 # Install python packages we'll rely on.
 pip install numpy
 pip install ipython pyzmq jinja2 tornado pygments sphinx
+pip install --upgrade ipython
 
 # Install Julia from packages
 add-apt-repository -y ppa:staticfloat/julia-deps
