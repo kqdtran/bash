@@ -62,11 +62,11 @@ alias delbranch='git branch -d'
 alias de='deactivate'
 
 # class alias. Always remember to clear and renew after each semester
-alias s199="ssh cs199-xs@nova.cs.berkeley.edu" # don't clear this one yet
-alias s70="ssh cs70-re@nova.cs.berkeley.edu"
+alias s199="ssh cs199-xs@hive4.cs.berkeley.edu"
+alias s70="ssh cs70-re@hive4.cs.berkeley.edu"
 alias s161="ssh cs161-py@hive22.cs.berkeley.edu"
-alias s189="ssh cs189-fx@nova.cs.berkeley.edu"
-alias s164="ssh cs164-au@nova.cs.berkeley.edu"
+alias s189="ssh cs189-fx@hive4.cs.berkeley.edu"
+alias s164="ssh cs164-au@hive4.cs.berkeley.edu"
 alias s135="ssh s135-1007801@98.143.38.105"
 alias s135scf="ssh s135-1007801@scf-ug01.berkeley.edu"
 alias sis="ssh khoatran@ischool.berkeley.edu"
@@ -75,9 +75,29 @@ alias sis="ssh khoatran@ischool.berkeley.edu"
 alias cloud135="rdesktop -u s135-1007801 98.143.38.105"
 
 # SAAS Book VM
-alias svm="ssh -p 3022 saasbook@127.0.0.1"
-function scpvm() {
+alias s169vm="ssh -p 3022 saasbook@127.0.0.1"
+function scp169vm() {
     scp -r $1 -P 3022 saasbook@127.0.0.1:~/$2
+}
+
+# CS 161's pwnable VM (project 2 Spr14)
+#alias s161vm="ssh vsftpd@192.168.56.101"
+#function scp161vm() {
+#    scp -r $1 vsftpd@192.168.56.101:~/$2
+#}
+
+# CS 161's nethack VM (project 3 Spr14)
+alias s161-q1="ssh q1-student@192.168.56.101"
+function scp161-q1() {
+    scp -r $1 q1-student@192.168.56.101:~/$2
+}
+alias s161-q2="ssh q2-student@192.168.56.101"
+function scp161-q2() {
+    scp -r $1 q2-student@192.168.56.101:~/$2
+}
+alias s161-q3="ssh q3-student@192.168.56.101"
+function scp161-q3() {
+    scp -r $1 q3-student@192.168.56.101:~/$2
 }
 
 # EE122 Project 3
@@ -88,19 +108,19 @@ function scpvm() {
 
 # class-related functions to automate things
 function scp199() {
-    scp -r $1 cs199-xs@nova.cs.berkeley.edu:~/$2
+    scp -r $1 cs199-xs@hive4.cs.berkeley.edu:~/$2
 }
 function scp70() {
-    scp -r $1 cs70-re@nova.cs.berkeley.edu:~/$2
+    scp -r $1 cs70-re@hive4.cs.berkeley.edu:~/$2
 }
 function scp161() {
     scp -r $1 cs161-py@hive22.cs.berkeley.edu:~/$2
 }
 function scp189() {
-    scp -r $1 cs189-fx@nova.cs.berkeley.edu:~/$2
+    scp -r $1 cs189-fx@hive4.cs.berkeley.edu:~/$2
 }
 function scp164() {
-    scp -r $1 cs164-au@nova.cs.berkeley.edu:~/$2
+    scp -r $1 cs164-au@hive4.cs.berkeley.edu:~/$2
 }
 function scp135() {
     scp -r $1 s135-1007801@98.143.38.105:~/$2

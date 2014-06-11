@@ -4,6 +4,7 @@
 # CS 194-16 Introduction to Data Science
 
 # Install python-setuptools and what we need to install these packages from source.
+apt-get update
 apt-get install -y python-setuptools python-dev python-pip python-matplotlib pandoc
 
 # Install python packages we'll rely on.

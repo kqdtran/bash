@@ -97,6 +97,9 @@ fi
 #---------------------------------------#
 #########################################
 
+# PYTHONPATH
+#export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/gtk_redshift/
+
 # Matlab
 export PATH=$PATH:/usr/local/MATLAB/R2012a/bin
 
@@ -107,16 +110,16 @@ export PATH=/usr/local/heroku/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin
 
 # Other IDEs, Pycharm and Intellij
-export PATH=/home/khoatran/software/idea-IU-129.161/bin:$PATH
+export PATH=/home/khoatran/software/intellij/bin:$PATH
 export PATH=/home/khoatran/software/pycharm-2.7.3/bin:$PATH
 
 # autojump to different directory, babay
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 # Scala and SBT
-export SCALA_HOME=/usr/local/scala-2.10.1/
-export PATH=$PATH:$SCALA_HOME/bin
-export PATH=/usr/bin/sbt/bin:$PATH
+#export SCALA_HOME=/usr/local/scala-2.10.1/
+#export PATH=$PATH:$SCALA_HOME/bin
+#export PATH=/usr/bin/sbt/bin:$PATH
 
 # Go-lang
 export GOROOT=/usr/local/go
